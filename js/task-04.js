@@ -13,6 +13,22 @@
 
 
 const refs = {
-    
+    btnDec: document.querySelector('button[data-action="decrement"]'),
+    btnInc: document.querySelector('button[data-action="increment"]'),
+    value: document.querySelector('#value'),
 }
+
 let counterValue = 0;
+
+// console.log(counterValue);
+// counterValue++
+// console.log(counterValue);
+// console.log(refs.btnDec);
+// console.log(refs.btmInc);
+// console.log(refs.value);
+
+
+refs.btnDec.addEventListener("click", () => counterValue --);
+refs.btnInc.addEventListener("click", () => counterValue ++);
+
+refs.value.textContent = counterValue;
