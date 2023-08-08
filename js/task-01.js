@@ -8,11 +8,12 @@
 // Для виконання цього завдання потрібно використати метод forEach() і властивості навігації по DOM.
 
 
+
 // ==1==
+const categoriesArr = [...document.querySelector('#categories').children]
 console.log(`Number of categories: ${categoriesArr.length}`); 
 
 // ==2==
-const categoriesArr = [...document.querySelector('#categories').children]
 categoriesArr.forEach((category) => {
     console.log(`
 Category: ${category.firstElementChild.textContent}
